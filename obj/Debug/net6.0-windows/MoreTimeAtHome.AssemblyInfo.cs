@@ -12,9 +12,9 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("MoreTimeAtHome")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0114fe3aaf81d95553e34ea80c551d0f7f260b5c")]
 [assembly: System.Reflection.AssemblyProductAttribute("MoreTimeAtHome")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MoreTimeAtHome")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

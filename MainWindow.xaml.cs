@@ -41,13 +41,13 @@ namespace MoreTimeAtHome
             System.Drawing.Icon icon;
             try
             {
-                icon = new System.Drawing.Icon("icon.ico");
+                var iconPath = Path.Combine(AppContext.BaseDirectory, "icon.ico");
+                icon = new System.Drawing.Icon(iconPath);
             }
             catch
             {
-                icon = System.Drawing.Icon.ExtractAssociatedIcon(
-                           System.Reflection.Assembly.GetExecutingAssembly().Location
-                       ) ?? System.Drawing.SystemIcons.Application;
+                var exePath = System.Diagnostics.Process.GetCurrentProcess().MainModule!.FileName!;
+                icon = System.Drawing.Icon.ExtractAssociatedIcon(exePath) ?? System.Drawing.SystemIcons.Application;
             }
 
             trayIcon = new System.Windows.Forms.NotifyIcon
