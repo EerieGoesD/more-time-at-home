@@ -1,0 +1,679 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>More Time At Home — Holiday Leave Optimizer</title><meta name="description" content="Maximize your time off work. Smart leave planner that optimizes your paid leave days around weekends and national holidays. Free, runs in your browser."><meta name="keywords" content="holiday planner, leave optimizer, vacation planner, paid leave calculator, time off optimizer, bridge days, long weekends, holiday calendar 2026, PTO optimizer"><meta name="author" content="EERIE"><meta name="robots" content="index, follow"><link rel="canonical" href="https://eeriegoesd.com/more-time-at-home"><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:title" content="More Time At Home — Holiday Leave Optimizer"><meta property="og:description" content="Maximize your days off. Smart algorithm places your paid leaves around weekends and national holidays for maximum consecutive time at home."><meta property="og:url" content="https://eeriegoesd.com/more-time-at-home"><meta property="og:image" content="https://eeriegoesd.com/more-time-at-home/og-more-time-at-home.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="More Time At Home — Holiday Leave Optimizer"><meta name="twitter:description" content="Maximize your days off. Smart leave planner that optimizes paid leave around weekends & holidays."><meta name="twitter:image" content="https://eeriegoesd.com/more-time-at-home/og-more-time-at-home.png"><!-- Structured Data --><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "More Time At Home — Holiday Leave Optimizer",
+  "url": "https://eeriegoesd.com/more-time-at-home-website/",
+  "description": "Smart leave planner that maximizes your time off by placing paid leaves around weekends and national holidays.",
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "author": { "@type": "Person", "name": "EERIE", "url": "https://eeriegoesd.com/" },
+  "browserRequirements": "Requires JavaScript"
+}</script><!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-XGS7BNBY0Y"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-XGS7BNBY0Y")</script><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>"><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet"><style>:root{--bg:#0a0a0f;--surface:#111118;--surface2:#1a1a24;--border:#2a2a3a;--accent:#ff6b2b;--accent2:#ff9a5c;--text:#e8e8f0;--muted:#6b6b88;--success:#3de68e;--mono:'JetBrains Mono',monospace;--sans:'Syne',sans-serif;--clr-national:#4cc9f0;--clr-planned:#3de68e;--clr-weekend:#f9c74f;--clr-holiday-weekend:#ff6b6b;--clr-custom:#e091ab;--clr-working-weekend:#8b6914}*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:100vh;overflow-x:hidden}body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:.5}header{position:relative;padding:48px 24px 36px;border-bottom:1px solid var(--border);background:linear-gradient(180deg,#0f0f1a 0,var(--bg) 100%);overflow:hidden}header::after{content:'';position:absolute;top:-60px;left:-40px;width:400px;height:400px;background:radial-gradient(circle,rgba(255,107,43,.08) 0,transparent 70%);pointer-events:none}.header-inner{max-width:1100px;margin:0 auto;position:relative;z-index:1}.tag{font-family:var(--mono);font-size:11px;color:var(--accent);letter-spacing:3px;text-transform:uppercase;margin-bottom:12px;opacity:.9}h1{font-size:clamp(28px,5vw,44px);font-weight:800;line-height:1.1;color:#fff;margin-bottom:12px}h1 span{color:var(--accent)}.subtitle{color:var(--muted);font-size:14px;font-family:var(--mono);line-height:1.7}main{max-width:1100px;margin:0 auto;padding:40px 24px 80px;position:relative;z-index:1}.step{margin-bottom:36px}.step-label{display:flex;align-items:center;gap:12px;margin-bottom:18px}.step-num{width:28px;height:28px;background:var(--accent);color:#fff;font-weight:700;font-size:12px;border-radius:4px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);flex-shrink:0}.step-title{font-size:15px;font-weight:700;color:#fff;letter-spacing:1px;text-transform:uppercase}.divider{height:1px;background:var(--border);margin:32px 0}.controls-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}.control-group{display:flex;flex-direction:column;gap:6px}.control-group label{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:1px;text-transform:uppercase}.control-group input[type=date],.control-group input[type=number],.control-group select{background:var(--surface);border:1.5px solid var(--border);color:var(--text);font-family:var(--mono);font-size:13px;padding:8px 12px;border-radius:6px;outline:0;transition:border-color .2s;width:100%}.control-group input:focus,.control-group select:focus{border-color:var(--accent)}.control-group select option{background:var(--surface);color:var(--text)}.constraints-panel{background:var(--surface);border:1.5px solid var(--border);border-radius:10px;overflow:hidden}.constraints-header{padding:12px 18px;background:var(--surface2);border-bottom:1px solid var(--border);font-size:13px;font-weight:700;color:#fff;display:flex;align-items:center;gap:8px}.constraints-body{padding:16px 18px}.constraint-section{margin-bottom:16px}.constraint-section:last-child{margin-bottom:0}.constraint-section-title{font-family:var(--mono);font-size:10px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}.constraint-section-subtitle{font-family:var(--mono);font-size:9px;color:var(--muted);margin-top:-6px;margin-bottom:10px}.constraint-row{display:flex;flex-wrap:wrap;gap:12px}.constraint-item{display:flex;align-items:center;gap:6px;cursor:pointer;user-select:none}.constraint-item input[type=checkbox]{appearance:none;width:16px;height:16px;border:1.5px solid var(--border);border-radius:3px;background:0 0;cursor:pointer;position:relative;flex-shrink:0;transition:all .15s}.constraint-item input[type=checkbox]:checked{background:var(--accent);border-color:var(--accent)}.constraint-item input[type=checkbox]:checked::after{content:'✓';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;font-size:10px;font-weight:700}.constraint-item span{font-family:var(--mono);font-size:11px;color:var(--text)}.constraint-item span.max-label{color:var(--accent2)}.constraint-note{font-family:var(--mono);font-size:10px;color:var(--muted);line-height:1.6;margin-top:14px;padding-top:12px;border-top:1px solid var(--border)}.action-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.btn{font-family:var(--sans);font-weight:700;font-size:13px;padding:10px 20px;border:none;border-radius:8px;cursor:pointer;transition:all .2s;letter-spacing:.5px;display:inline-flex;align-items:center;gap:6px}.btn:hover{transform:translateY(-1px)}.btn:active{transform:translateY(0)}.btn-primary{background:var(--accent);color:#fff}.btn-primary:hover{background:var(--accent2);box-shadow:0 4px 20px rgba(255,107,43,.3)}.btn-secondary{background:var(--surface2);color:var(--text);border:1px solid var(--border)}.btn-secondary:hover{border-color:var(--muted)}.btn-warning{background:#f9c74f;color:#1a1a24}.btn-danger{background:0 0;color:var(--muted);border:1px solid var(--border)}.btn-danger:hover{border-color:#f55;color:#f55}.calendar-wrapper{margin-top:8px}.calendar-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}@media (max-width:900px){.calendar-grid{grid-template-columns:repeat(3,1fr)}}@media (max-width:650px){.calendar-grid{grid-template-columns:repeat(2,1fr)}}@media (max-width:420px){.calendar-grid{grid-template-columns:1fr}}.month-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;overflow:hidden}.month-header{background:linear-gradient(135deg,#2a2a3a,#1a1a24);padding:8px 10px;font-weight:700;font-size:12px;color:#fff;text-align:center;letter-spacing:1px;text-transform:uppercase;border-bottom:1px solid var(--border)}.month-day-headers{display:grid;grid-template-columns:repeat(7,1fr);background:var(--surface2);border-bottom:1px solid var(--border)}.month-day-headers span{text-align:center;font-family:var(--mono);font-size:9px;font-weight:600;color:var(--muted);padding:4px 0}.month-days{display:grid;grid-template-columns:repeat(7,1fr)}.day-cell{aspect-ratio:1;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;cursor:pointer;transition:opacity .1s;border:.5px solid rgba(42,42,58,.4);position:relative;user-select:none}.day-cell:hover{opacity:.75}.day-cell.empty{background:var(--surface);cursor:default}.day-cell.empty:hover{opacity:1}.day-cell.working{background:var(--surface2);color:var(--text)}.day-cell.weekend{background:var(--clr-weekend);color:#1a1a24;font-weight:600}.day-cell.national{background:var(--clr-national);color:#fff;font-weight:700}.day-cell.holiday-weekend{background:var(--clr-holiday-weekend);color:#fff;font-weight:700}.day-cell.custom{background:var(--clr-custom);color:#1a1a24;font-weight:700}.day-cell.planned{background:var(--clr-planned);color:#1a1a24;font-weight:700}.day-cell.working-weekend{background:var(--clr-working-weekend);color:#fff;font-weight:600}.day-cell[title]:hover::after{content:attr(title);position:absolute;bottom:calc(100% + 4px);left:50%;transform:translateX(-50%);background:#000;color:#fff;font-size:9px;padding:3px 6px;border-radius:4px;white-space:nowrap;z-index:10;pointer-events:none}.legend-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.legend-item{display:flex;align-items:center;gap:5px;font-family:var(--mono);font-size:10px;color:var(--muted)}.legend-swatch{width:14px;height:14px;border-radius:3px;flex-shrink:0;border:1px solid rgba(255,255,255,.1)}.stats-bar{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px 18px;margin-top:20px;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}.stat-item{display:flex;flex-direction:column;gap:2px}.stat-label{font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:1px;text-transform:uppercase}.stat-value{font-size:20px;font-weight:800;color:#fff}.stat-value .stat-unit{font-size:11px;color:var(--muted);font-weight:400}.stat-value.accent{color:var(--accent)}.stat-value.green{color:var(--success)}.status-bar{font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:16px;display:flex;align-items:center;gap:8px}.status-dot{width:6px;height:6px;border-radius:50%;background:var(--success);flex-shrink:0}.status-dot.loading{background:var(--accent);animation:pulse 1s infinite}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}.modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:100;align-items:center;justify-content:center;padding:20px}.modal-overlay.open{display:flex}.modal{background:var(--surface);border:1px solid var(--border);border-radius:12px;max-width:600px;width:100%;max-height:80vh;overflow-y:auto;position:relative}.modal-header{padding:18px 22px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:var(--surface);z-index:1}.modal-title{font-weight:800;font-size:16px;color:#fff}.modal-close{background:0 0;border:none;color:var(--muted);font-size:20px;cursor:pointer;padding:4px;line-height:1}.modal-close:hover{color:var(--text)}.modal-body{padding:22px;font-size:13px;line-height:1.8;color:var(--text)}.modal-body h3{color:var(--accent);font-family:var(--mono);font-size:11px;letter-spacing:2px;text-transform:uppercase;margin:20px 0 8px}.modal-body h3:first-child{margin-top:0}.modal-body p{margin-bottom:10px}footer{text-align:center;padding:20px;font-family:var(--mono);font-size:11px;color:var(--muted);display:flex;align-items:center;justify-content:center;gap:10px}footer a{color:var(--accent);text-decoration:none;font-weight:700}footer a:hover{color:var(--accent2)}footer .sep{color:var(--border)}::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-track{background:0 0}::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}#loadFileInput{display:none}</style></head><body><header><div class="header-inner"><p class="tag">// More Time At Home v1.0</p><h1>🏠 Holiday Leave<br><span>Optimizer</span></h1><p class="subtitle">Maximize your days off. Pick your country → set your paid leaves → hit Optimize.<br>Smart algorithm places leaves around weekends &amp; holidays for maximum time at home.</p><p class="social-proof" style="margin-top:14px;font-family:var(--mono);font-size:11px;color:var(--muted)">🌍 Works for 26 countries · 🔒 Runs entirely in your browser · ☕ Free forever</p></div></header><main><!-- STEP 1: Setup --><div class="step"><div class="step-label"><div class="step-num">01</div><div class="step-title">Setup</div></div><div class="controls-grid"><div class="control-group"><label>Year</label> <select id="yearSelect"></select></div><div class="control-group"><label>Country</label> <select id="countrySelect"></select></div><div class="control-group"><label>Paid Leaves</label> <input type="number" id="paidLeaves" value="22" min="0" max="365"></div><div class="control-group"><label>Calculate From</label> <input type="date" id="calcFrom"></div><div class="control-group"><label>Week Starts</label> <select id="weekStart"><option value="mon">Mon → Sun</option><option value="sun">Sun → Sat</option></select></div></div></div><div class="divider"></div><!-- STEP 2: Constraints --><div class="step"><div class="step-label"><div class="step-num">02</div><div class="step-title">Constraints</div></div><div class="constraints-panel"><div class="constraints-header">⚙️ Optimization Constraints</div><div style="padding:10px 18px 0;font-family:var(--mono);font-size:10px;color:var(--muted);line-height:1.6">Some companies enforce min/max paid leaves or days off in a row — tick the ones that apply to you.</div><div class="constraints-body"><div class="constraint-section"><div class="constraint-section-title">Days Off (in a row)</div><div class="constraint-section-subtitle">Consecutive days off including weekends &amp; holidays</div><div class="constraint-row"><label class="constraint-item"><input type="checkbox" id="minDaysOff5"><span>Min 5</span></label> <label class="constraint-item"><input type="checkbox" id="minDaysOff10"><span>Min 10</span></label> <label class="constraint-item"><input type="checkbox" id="maxDaysOff5"><span class="max-label">Max 5</span></label> <label class="constraint-item"><input type="checkbox" id="maxDaysOff10"><span class="max-label">Max 10</span></label></div></div><div class="constraint-section"><div class="constraint-section-title">Paid Leaves (in a row)</div><div class="constraint-section-subtitle">Consecutive paid leave days excluding weekends &amp; holidays</div><div class="constraint-row"><label class="constraint-item"><input type="checkbox" id="minPaid5"><span>Min 5</span></label> <label class="constraint-item"><input type="checkbox" id="minPaid10"><span>Min 10</span></label> <label class="constraint-item"><input type="checkbox" id="maxPaid5"><span class="max-label">Max 5</span></label> <label class="constraint-item"><input type="checkbox" id="maxPaid10"><span class="max-label">Max 10</span></label></div></div><div class="constraint-note">Days Off = total consecutive days off (includes weekends &amp; holidays) · Paid Leaves = consecutive paid leave days only (excluding weekends &amp; holidays)</div></div></div><div class="action-row"><button class="btn btn-primary" onclick="optimize()">🎯 Optimize</button> <button class="btn btn-warning" onclick="openHowTo()">❓ How to</button> <button class="btn btn-secondary" onclick="savePlan()">💾 Save</button> <button class="btn btn-secondary" onclick="document.getElementById(&#34;loadFileInput&#34;).click()">📂 Load</button> <button class="btn btn-danger" onclick="clearAll()">🗑️ Clear Leaves</button> <button class="btn btn-secondary" onclick="shareResults()">📤 Share Result</button></div><input type="file" id="loadFileInput" accept=".hplan,.json"></div><div class="divider"></div><!-- STEP 3: Calendar --><div class="step"><div class="step-label"><div class="step-num">03</div><div class="step-title">Calendar</div></div><div class="legend-row"><div class="legend-item"><div class="legend-swatch" style="background:var(--clr-national)"></div>National Holiday</div><div class="legend-item"><div class="legend-swatch" style="background:var(--clr-planned)"></div>Planned Leave</div><div class="legend-item"><div class="legend-swatch" style="background:var(--clr-weekend)"></div>Weekend</div><div class="legend-item"><div class="legend-swatch" style="background:var(--clr-holiday-weekend)"></div>Holiday + Weekend</div><div class="legend-item"><div class="legend-swatch" style="background:var(--clr-custom)"></div>Custom Holiday</div><div class="legend-item"><div class="legend-swatch" style="background:var(--clr-working-weekend)"></div>Working Weekend</div></div><div class="calendar-wrapper"><div class="calendar-grid" id="calendarGrid"></div></div><!-- Stats --><div class="stats-bar" id="statsBar" style="display:none"></div><!-- Status --><div class="status-bar" id="statusBar"><div class="status-dot" id="statusDot"></div><span id="statusText">Select a year and country to begin</span></div></div></main><!-- FAQ Section --><section style="max-width:1100px;margin:0 auto;padding:0 24px 60px;position:relative;z-index:1"><div class="divider"></div><h2 style="font-size:18px;font-weight:800;color:#fff;margin:32px 0 20px">Frequently Asked Questions</h2><details style="margin-bottom:12px;border:1px solid var(--border);border-radius:8px;background:var(--surface)"><summary style="padding:14px 18px;cursor:pointer;font-weight:700;font-size:13px;color:var(--text)">What is a holiday leave optimizer?</summary><p style="padding:0 18px 14px;font-size:13px;color:var(--muted);line-height:1.7">A holiday leave optimizer (also called a bridge day calculator or PTO maximizer) analyzes your country's public holidays and weekends to find the best dates to take paid leave. By placing leave days next to existing days off, you get the longest possible consecutive breaks from the fewest leave days.</p></details><details style="margin-bottom:12px;border:1px solid var(--border);border-radius:8px;background:var(--surface)"><summary style="padding:14px 18px;cursor:pointer;font-weight:700;font-size:13px;color:var(--text)">Is my data private?</summary><p style="padding:0 18px 14px;font-size:13px;color:var(--muted);line-height:1.7">Yes. Everything runs in your browser — no data is sent to any server. Holiday data comes from the open Nager.Date API, but your leave selections never leave your device.</p></details><details style="margin-bottom:12px;border:1px solid var(--border);border-radius:8px;background:var(--surface)"><summary style="padding:14px 18px;cursor:pointer;font-weight:700;font-size:13px;color:var(--text)">Which countries are supported?</summary><p style="padding:0 18px 14px;font-size:13px;color:var(--muted);line-height:1.7">Currently 26 countries including the US, UK, Germany, France, Japan, Brazil, India, and more. Public holidays are fetched automatically. You can also add custom holidays manually by clicking any day on the calendar.</p></details><details style="margin-bottom:12px;border:1px solid var(--border);border-radius:8px;background:var(--surface)"><summary style="padding:14px 18px;cursor:pointer;font-weight:700;font-size:13px;color:var(--text)">How does the optimization algorithm work?</summary><p style="padding:0 18px 14px;font-size:13px;color:var(--muted);line-height:1.7">The optimizer evaluates every possible placement of your leave days and scores each by efficiency — total consecutive days off divided by leave days used. It prioritizes placements that "bridge" gaps between weekends and holidays, giving you the most time off per leave day spent.</p></details></section><footer><span>Made by</span> <a href="https://eeriegoesd.com/" target="_blank" rel="noreferrer">EERIE</a> <span class="sep">·</span> <a href="https://buymeacoffee.com/eeriegoesd" target="_blank" rel="noreferrer">☕ Buy Me a Coffee</a> <span class="sep">·</span> <span>Holidays via <a href="https://date.nager.at" target="_blank" rel="noreferrer">Nager.Date</a></span></footer><!-- How To Modal --><div class="modal-overlay" id="howToModal"><div class="modal"><div class="modal-header"><span class="modal-title">❓ How to Use</span> <button class="modal-close" onclick="closeHowTo()">✕</button></div><div class="modal-body"><h3>Getting Started</h3><p>1. Pick the <strong>Year</strong> and <strong>Country</strong> — national holidays load automatically from the Nager.Date API.</p><p>2. Enter how many <strong>Paid Leaves</strong> you have per year.</p><p>3. Set <strong>Calculate From</strong> if you need to plan from a specific date.</p><h3>Calendar Colors</h3><p><strong style="color:var(--surface2)">■</strong> White/Dark = Working day</p><p><strong style="color:var(--clr-national)">■</strong> Blue = National Holiday (from API)</p><p><strong style="color:var(--clr-custom)">■</strong> Pink = Custom Holiday (forces a planned leave)</p><p><strong style="color:var(--clr-planned)">■</strong> Green = Planned Leave (optimizer output)</p><p><strong style="color:var(--clr-weekend)">■</strong> Yellow = Weekend</p><p><strong style="color:var(--clr-holiday-weekend)">■</strong> Red = Holiday on weekend (wasted)</p><p><strong style="color:var(--clr-working-weekend)">■</strong> Brown = Working weekend (overridden)</p><h3>Clicking Days</h3><p>Click any day to cycle through states. Working days become national holidays → custom holidays → planned leaves → back to working. Weekend days toggle to working weekends. Planned leaves on weekends revert.</p><h3>Constraints</h3><p><strong>Min X</strong> = optimizer only creates blocks with at least X consecutive days.</p><p><strong>Max X</strong> = optimizer caps blocks at X consecutive days.</p><p><strong>Days Off</strong> counts total consecutive days off (including weekends). <strong>Paid Leaves</strong> counts only actual leave days.</p><h3>Optimize</h3><p>Finds the best placement for your paid leaves to maximize total consecutive days off, working around weekends, national holidays, and custom holidays.</p><h3>Save &amp; Load</h3><p>Save your plan as a .hplan file (JSON). Load it back anytime — works across sessions.</p></div></div></div><script>// ─────────────────────────────────────────────
+// STATE
+// ─────────────────────────────────────────────
+
+const COUNTRIES = {
+  "Argentina": "AR", "Australia": "AU", "Austria": "AT", "Belgium": "BE",
+  "Brazil": "BR", "Canada": "CA", "Denmark": "DK", "Finland": "FI",
+  "France": "FR", "Germany": "DE", "India": "IN", "Italy": "IT",
+  "Japan": "JP", "Mexico": "MX", "Netherlands": "NL", "New Zealand": "NZ",
+  "Norway": "NO", "Poland": "PL", "Portugal": "PT", "South Africa": "ZA",
+  "South Korea": "KR", "Spain": "ES", "Sweden": "SE", "Switzerland": "CH",
+  "United Kingdom": "GB", "United States": "US"
+};
+
+let state = {
+  year: new Date().getFullYear(),
+  countryCode: 'US',
+  weekStartsMonday: true,
+  nationalHolidays: new Set(),
+  customHolidays: new Set(),
+  plannedLeaves: new Set(),
+  weekendOverrides: new Set(),
+  holidayNames: {}
+};
+
+// ─────────────────────────────────────────────
+// HELPERS
+// ─────────────────────────────────────────────
+
+const ds = d => d.toISOString().split('T')[0];
+const pd = s => new Date(s + 'T00:00:00');
+
+function isNaturalWeekend(date) {
+  const dow = date.getDay();
+  return dow === 0 || dow === 6;
+}
+
+function isWeekend(dateStr) {
+  const d = pd(dateStr);
+  return isNaturalWeekend(d) && !state.weekendOverrides.has(dateStr);
+}
+
+function isOff(dateStr) {
+  return isWeekend(dateStr) || state.nationalHolidays.has(dateStr) ||
+         state.customHolidays.has(dateStr) || state.plannedLeaves.has(dateStr);
+}
+
+function daysInMonth(year, month) {
+  return new Date(year, month, 0).getDate();
+}
+
+function isLeapYear(y) {
+  return (y % 4 === 0 && y % 100 !== 0) || y % 400 === 0;
+}
+
+// ─────────────────────────────────────────────
+// INIT
+// ─────────────────────────────────────────────
+
+function init() {
+  const yearSel = document.getElementById('yearSelect');
+  const curYear = new Date().getFullYear();
+  for (let y = curYear - 2; y <= curYear + 5; y++) {
+    const opt = document.createElement('option');
+    opt.value = y; opt.textContent = y;
+    if (y === curYear) opt.selected = true;
+    yearSel.appendChild(opt);
+  }
+
+  const countrySel = document.getElementById('countrySelect');
+  Object.keys(COUNTRIES).sort().forEach(name => {
+    const opt = document.createElement('option');
+    opt.value = COUNTRIES[name]; opt.textContent = name;
+    if (COUNTRIES[name] === 'US') opt.selected = true;
+    countrySel.appendChild(opt);
+  });
+
+  document.getElementById('calcFrom').value = `${curYear}-01-01`;
+
+  yearSel.addEventListener('change', onYearOrCountryChange);
+  countrySel.addEventListener('change', onYearOrCountryChange);
+  document.getElementById('weekStart').addEventListener('change', () => {
+    state.weekStartsMonday = document.getElementById('weekStart').value === 'mon';
+    renderCalendar();
+  });
+
+  document.getElementById('minDaysOff10').addEventListener('change', e => {
+    if (e.target.checked) document.getElementById('minDaysOff5').checked = true;
+  });
+  document.getElementById('minPaid10').addEventListener('change', e => {
+    if (e.target.checked) document.getElementById('minPaid5').checked = true;
+  });
+  document.getElementById('maxDaysOff5').addEventListener('change', e => {
+    if (e.target.checked) document.getElementById('maxDaysOff10').checked = false;
+  });
+  document.getElementById('maxDaysOff10').addEventListener('change', e => {
+    if (e.target.checked) document.getElementById('maxDaysOff5').checked = false;
+  });
+  document.getElementById('maxPaid5').addEventListener('change', e => {
+    if (e.target.checked) document.getElementById('maxPaid10').checked = false;
+  });
+  document.getElementById('maxPaid10').addEventListener('change', e => {
+    if (e.target.checked) document.getElementById('maxPaid5').checked = false;
+  });
+
+  document.getElementById('loadFileInput').addEventListener('change', loadPlan);
+
+  onYearOrCountryChange();
+}
+
+async function onYearOrCountryChange() {
+  state.year = parseInt(document.getElementById('yearSelect').value);
+  state.countryCode = document.getElementById('countrySelect').value;
+
+  const cf = document.getElementById('calcFrom');
+  const cfDate = cf.value ? pd(cf.value) : null;
+  if (cfDate) {
+    cf.value = `${state.year}-${String(cfDate.getMonth()+1).padStart(2,'0')}-${String(cfDate.getDate()).padStart(2,'0')}`;
+  } else {
+    cf.value = `${state.year}-01-01`;
+  }
+
+  state.plannedLeaves.clear();
+  await fetchHolidays();
+  renderCalendar();
+  updateStats();
+}
+
+// ─────────────────────────────────────────────
+// FETCH HOLIDAYS
+// ─────────────────────────────────────────────
+
+async function fetchHolidays() {
+  state.nationalHolidays.clear();
+  state.holidayNames = {};
+  setStatus('loading', 'Loading holidays...');
+
+  try {
+    const res = await fetch(`https://date.nager.at/api/v3/PublicHolidays/${state.year}/${state.countryCode}`);
+    if (res.ok) {
+      const data = await res.json();
+      data.forEach(h => {
+        if (h.date) {
+          state.nationalHolidays.add(h.date);
+          state.holidayNames[h.date] = h.localName || h.name;
+        }
+      });
+      setStatus('ok', `Loaded ${state.nationalHolidays.size} national holidays for ${state.year}`);
+    } else {
+      setStatus('ok', 'Could not fetch holidays — add them manually by clicking');
+    }
+  } catch (e) {
+    setStatus('ok', 'Offline — add holidays manually by clicking days');
+  }
+}
+
+function setStatus(type, msg) {
+  const dot = document.getElementById('statusDot');
+  const txt = document.getElementById('statusText');
+  dot.className = 'status-dot' + (type === 'loading' ? ' loading' : '');
+  txt.textContent = msg;
+}
+
+// ─────────────────────────────────────────────
+// RENDER CALENDAR
+// ─────────────────────────────────────────────
+
+function renderCalendar() {
+  const grid = document.getElementById('calendarGrid');
+  grid.innerHTML = '';
+
+  const dayNames = state.weekStartsMonday
+    ? ['Mo','Tu','We','Th','Fr','Sa','Su']
+    : ['Su','Mo','Tu','We','Th','Fr','Sa'];
+
+  for (let month = 1; month <= 12; month++) {
+    const card = document.createElement('div');
+    card.className = 'month-card';
+
+    const hdr = document.createElement('div');
+    hdr.className = 'month-header';
+    const monthDate = new Date(state.year, month - 1, 1);
+    hdr.textContent = monthDate.toLocaleString('en', { month: 'long' }) + ' ' + state.year;
+    card.appendChild(hdr);
+
+    const dhRow = document.createElement('div');
+    dhRow.className = 'month-day-headers';
+    dayNames.forEach(d => {
+      const sp = document.createElement('span');
+      sp.textContent = d;
+      dhRow.appendChild(sp);
+    });
+    card.appendChild(dhRow);
+
+    const daysDiv = document.createElement('div');
+    daysDiv.className = 'month-days';
+
+    const firstDay = new Date(state.year, month - 1, 1);
+    const dim = daysInMonth(state.year, month);
+    let startCol = state.weekStartsMonday
+      ? (firstDay.getDay() + 6) % 7
+      : firstDay.getDay();
+
+    const totalCells = Math.ceil((startCol + dim) / 7) * 7;
+
+    let day = 1;
+    for (let i = 0; i < totalCells; i++) {
+      const cell = document.createElement('div');
+      cell.className = 'day-cell';
+
+      if (i < startCol || day > dim) {
+        cell.classList.add('empty');
+      } else {
+        const dateStr = `${state.year}-${String(month).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+        const date = pd(dateStr);
+        cell.textContent = day;
+        cell.dataset.date = dateStr;
+
+        const isNatWknd = isNaturalWeekend(date);
+        const isWorkingWknd = state.weekendOverrides.has(dateStr);
+        const isNational = state.nationalHolidays.has(dateStr);
+        const isCustom = state.customHolidays.has(dateStr);
+        const isPlanned = state.plannedLeaves.has(dateStr);
+
+        if (isPlanned) {
+          cell.classList.add('planned');
+          cell.title = 'Planned Leave';
+        } else if (isCustom) {
+          cell.classList.add('custom');
+          cell.title = 'Custom Holiday';
+        } else if (isNational && isNatWknd && !isWorkingWknd) {
+          cell.classList.add('holiday-weekend');
+          cell.title = state.holidayNames[dateStr] || 'Holiday + Weekend';
+        } else if (isNational) {
+          cell.classList.add('national');
+          cell.title = state.holidayNames[dateStr] || 'National Holiday';
+        } else if (isNatWknd && isWorkingWknd) {
+          cell.classList.add('working-weekend');
+          cell.title = 'Working Weekend (overridden)';
+        } else if (isNatWknd) {
+          cell.classList.add('weekend');
+          cell.title = 'Weekend';
+        } else {
+          cell.classList.add('working');
+        }
+
+        cell.addEventListener('click', () => onDayClick(dateStr));
+        day++;
+      }
+
+      daysDiv.appendChild(cell);
+    }
+
+    card.appendChild(daysDiv);
+    grid.appendChild(card);
+  }
+}
+
+// ─────────────────────────────────────────────
+// DAY CLICK
+// ─────────────────────────────────────────────
+
+function onDayClick(dateStr) {
+  const date = pd(dateStr);
+  const isNatWknd = isNaturalWeekend(date);
+  const wasNational = state.nationalHolidays.has(dateStr);
+  const wasCustom = state.customHolidays.has(dateStr);
+  const wasPlanned = state.plannedLeaves.has(dateStr);
+  const wasWorkingWknd = state.weekendOverrides.has(dateStr);
+
+  state.nationalHolidays.delete(dateStr);
+  state.customHolidays.delete(dateStr);
+  state.plannedLeaves.delete(dateStr);
+  delete state.holidayNames[dateStr];
+
+  if (wasPlanned) {
+    if (isNatWknd) state.weekendOverrides.add(dateStr);
+  } else if (isNatWknd && !wasWorkingWknd && !wasNational && !wasCustom) {
+    state.plannedLeaves.add(dateStr);
+  } else if (isNatWknd && wasWorkingWknd) {
+    state.weekendOverrides.delete(dateStr);
+  } else if (wasCustom) {
+    state.plannedLeaves.add(dateStr);
+  } else if (wasNational) {
+    state.customHolidays.add(dateStr);
+  } else {
+    state.nationalHolidays.add(dateStr);
+  }
+
+  renderCalendar();
+  updateStats();
+}
+
+// ─────────────────────────────────────────────
+// OPTIMIZATION
+// ─────────────────────────────────────────────
+
+function optimize() {
+  const paidLeavesAmount = parseInt(document.getElementById('paidLeaves').value) || 0;
+  if (paidLeavesAmount <= 0) { alert('Enter a valid number of paid leaves.'); return; }
+
+  const reqMin5Off = document.getElementById('minDaysOff5').checked;
+  const reqMin10Off = document.getElementById('minDaysOff10').checked;
+  const reqMax5Off = document.getElementById('maxDaysOff5').checked;
+  const reqMax10Off = document.getElementById('maxDaysOff10').checked;
+  const reqMin5Paid = document.getElementById('minPaid5').checked;
+  const reqMin10Paid = document.getElementById('minPaid10').checked;
+  const reqMax5Paid = document.getElementById('maxPaid5').checked;
+  const reqMax10Paid = document.getElementById('maxPaid10').checked;
+
+  let startDateStr = document.getElementById('calcFrom').value || `${state.year}-01-01`;
+  let startDate = pd(startDateStr);
+  if (startDate.getFullYear() !== state.year) {
+    startDate = new Date(state.year, startDate.getMonth(), startDate.getDate());
+  }
+
+  setStatus('loading', 'Calculating optimal leave distribution...');
+  state.plannedLeaves.clear();
+
+  const allDays = [];
+  let cur = new Date(startDate);
+  while (cur.getFullYear() === state.year) {
+    allDays.push(ds(cur));
+    cur.setDate(cur.getDate() + 1);
+  }
+
+  const opportunities = [];
+  for (let i = 0; i < allDays.length; i++) {
+    const dayStr = allDays[i];
+    if (isWeekend(dayStr) || state.nationalHolidays.has(dayStr) || state.customHolidays.has(dayStr)) continue;
+
+    const maxLen = Math.min(paidLeavesAmount, 20);
+    for (let len = 1; len <= maxLen; len++) {
+      if (reqMin10Off && len < 10) continue;
+      if (reqMin5Off && len < 5) continue;
+
+      const opp = evaluateOpportunity(allDays, dayStr, len);
+      if (!opp || opp.requiredLeaves > paidLeavesAmount) continue;
+      if (reqMax10Off && opp.totalDaysOff > 10) continue;
+      if (reqMax5Off && opp.totalDaysOff > 5) continue;
+      if (reqMax10Paid && opp.requiredLeaves > 10) continue;
+      if (reqMax5Paid && opp.requiredLeaves > 5) continue;
+
+      opportunities.push(opp);
+    }
+  }
+
+  opportunities.sort((a, b) => b.efficiency - a.efficiency || b.totalDaysOff - a.totalDaysOff);
+
+  let remaining = paidLeavesAmount;
+  const usedDates = new Set();
+
+  if (reqMin10Paid || reqMin5Paid) {
+    const required = reqMin10Paid ? 10 : 5;
+    let satisfied = false;
+    for (const opp of opportunities) {
+      if (opp.requiredLeaves > remaining) continue;
+      if (countConsecutivePaid(opp.leaveDates) >= required) {
+        opp.leaveDates.forEach(d => { state.plannedLeaves.add(d); usedDates.add(d); });
+        remaining -= opp.requiredLeaves;
+        satisfied = true;
+        break;
+      }
+    }
+    if (!satisfied) {
+      setStatus('ok', `Cannot satisfy constraint: need ${required} paid leaves in a row`);
+      renderCalendar();
+      updateStats();
+      return;
+    }
+  }
+
+  for (const opp of opportunities) {
+    if (remaining === 0) break;
+    if (opp.leaveDates.some(d => usedDates.has(d))) continue;
+    if (opp.requiredLeaves > remaining) continue;
+
+    const cp = countConsecutivePaid(opp.leaveDates);
+    if (reqMax10Paid && cp > 10) continue;
+    if (reqMax5Paid && cp > 5) continue;
+
+    opp.leaveDates.forEach(d => { state.plannedLeaves.add(d); usedDates.add(d); });
+    remaining -= opp.requiredLeaves;
+  }
+
+  if (remaining > 0 && !reqMin10Off && !reqMin5Off && !reqMin10Paid && !reqMin5Paid) {
+    const singles = opportunities.filter(o => o.requiredLeaves === 1 && !o.leaveDates.some(d => usedDates.has(d)));
+    for (const s of singles) {
+      if (remaining === 0) break;
+      state.plannedLeaves.add(s.leaveDates[0]);
+      remaining--;
+    }
+  }
+
+  renderCalendar();
+  updateStats();
+  setStatus('ok', 'Optimization complete!');
+}
+
+function evaluateOpportunity(allDays, startDateStr, leaveLength) {
+  const leaveDates = [];
+  let cur = pd(startDateStr);
+  let added = 0;
+
+  while (added < leaveLength) {
+    const d = ds(cur);
+    if (isWeekend(d) || state.nationalHolidays.has(d) || state.customHolidays.has(d)) {
+      cur.setDate(cur.getDate() + 1);
+      if (cur.getFullYear() !== state.year) return null;
+      continue;
+    }
+    leaveDates.push(d);
+    added++;
+    cur.setDate(cur.getDate() + 1);
+    if (cur.getFullYear() !== state.year && added < leaveLength) return null;
+  }
+
+  if (added < leaveLength) return null;
+
+  const totalOff = new Set();
+  let checkStart = pd(startDateStr);
+  let lookBack = new Date(checkStart);
+  lookBack.setDate(lookBack.getDate() - 1);
+  while (lookBack.getFullYear() === state.year) {
+    const lb = ds(lookBack);
+    if (isWeekend(lb) || state.nationalHolidays.has(lb) || state.customHolidays.has(lb)) {
+      checkStart = new Date(lookBack);
+      lookBack.setDate(lookBack.getDate() - 1);
+    } else break;
+  }
+
+  let check = new Date(checkStart);
+  const leaveSet = new Set(leaveDates);
+  while (check.getFullYear() === state.year) {
+    const d = ds(check);
+    if (isWeekend(d) || state.nationalHolidays.has(d) || state.customHolidays.has(d) || leaveSet.has(d)) {
+      totalOff.add(d);
+      check.setDate(check.getDate() + 1);
+    } else break;
+  }
+
+  if (totalOff.size === 0) return null;
+
+  return {
+    leaveDates,
+    requiredLeaves: leaveLength,
+    totalDaysOff: totalOff.size,
+    efficiency: totalOff.size / leaveLength
+  };
+}
+
+function countConsecutivePaid(leaveDates) {
+  if (leaveDates.length === 0) return 0;
+  const sorted = [...leaveDates].sort();
+  const leaveSet = new Set(sorted);
+  let maxC = 0, curC = 0, prev = null;
+
+  for (const d of sorted) {
+    if (!prev) { curC = 1; }
+    else {
+      let check = pd(prev);
+      check.setDate(check.getDate() + 1);
+      let broken = false;
+      while (ds(check) < d) {
+        const cd = ds(check);
+        if (state.nationalHolidays.has(cd) || state.customHolidays.has(cd)) {
+          broken = true; break;
+        } else if (!isWeekend(cd) && !leaveSet.has(cd)) {
+          broken = true; break;
+        }
+        check.setDate(check.getDate() + 1);
+      }
+      curC = broken ? 1 : curC + 1;
+    }
+    maxC = Math.max(maxC, curC);
+    prev = d;
+  }
+  return maxC;
+}
+
+// ─────────────────────────────────────────────
+// STATS
+// ─────────────────────────────────────────────
+
+function updateStats() {
+  const bar = document.getElementById('statsBar');
+  const allocated = parseInt(document.getElementById('paidLeaves').value) || 0;
+  const used = state.plannedLeaves.size;
+
+  let totalOff = 0, wkndsHols = 0;
+  const totalDays = isLeapYear(state.year) ? 366 : 365;
+  let d = new Date(state.year, 0, 1);
+  while (d.getFullYear() === state.year) {
+    const dateStr = ds(d);
+    if (isOff(dateStr)) totalOff++;
+    if (isWeekend(dateStr) || state.nationalHolidays.has(dateStr) || state.customHolidays.has(dateStr)) wkndsHols++;
+    d.setDate(d.getDate() + 1);
+  }
+
+  const workingDays = totalDays - totalOff;
+  const efficiency = used > 0 ? ((totalOff - wkndsHols) / used).toFixed(2) : '0';
+
+  if (used === 0 && state.nationalHolidays.size === 0) {
+    bar.style.display = 'none';
+    return;
+  }
+
+  bar.style.display = 'grid';
+  bar.innerHTML = `
+    <div class="stat-item">
+      <div class="stat-label">Leaves Used</div>
+      <div class="stat-value accent">${used}<span class="stat-unit"> / ${allocated}</span></div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">National Holidays</div>
+      <div class="stat-value">${state.nationalHolidays.size}</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">Custom Holidays</div>
+      <div class="stat-value">${state.customHolidays.size}</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">Total Days Off</div>
+      <div class="stat-value green">${totalOff}<span class="stat-unit"> (${(totalOff * 100 / totalDays).toFixed(1)}%)</span></div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">Working Days</div>
+      <div class="stat-value">${workingDays}</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-label">Efficiency</div>
+      <div class="stat-value accent">${efficiency}<span class="stat-unit"> extra/leave</span></div>
+    </div>
+  `;
+}
+
+// ─────────────────────────────────────────────
+// SHARE
+// ─────────────────────────────────────────────
+
+function shareResults() {
+  const used = state.plannedLeaves.size;
+  const allocated = parseInt(document.getElementById('paidLeaves').value) || 0;
+  const totalDays = isLeapYear(state.year) ? 366 : 365;
+  let totalOff = 0;
+  let d = new Date(state.year, 0, 1);
+  while (d.getFullYear() === state.year) {
+    if (isOff(ds(d))) totalOff++;
+    d.setDate(d.getDate() + 1);
+  }
+  const text = `I just optimized my ${state.year} leave plan! ${used} paid leaves → ${totalOff} total days off (${(totalOff * 100 / totalDays).toFixed(1)}% of the year). Try it free:`;
+  const url = window.location.href;
+
+  if (navigator.share) {
+    navigator.share({ title: 'More Time At Home', text, url }).catch(() => {});
+  } else {
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+    window.open(twitterUrl, '_blank');
+  }
+}
+
+// ─────────────────────────────────────────────
+// SAVE / LOAD
+// ─────────────────────────────────────────────
+
+function savePlan() {
+  const plan = {
+    Year: state.year,
+    CountryCode: state.countryCode,
+    NationalHolidays: [...state.nationalHolidays],
+    CustomHolidays: [...state.customHolidays],
+    PlannedLeaves: [...state.plannedLeaves],
+    WeekendOverrides: [...state.weekendOverrides],
+    PaidLeavesAmount: document.getElementById('paidLeaves').value,
+    CalculateFrom: document.getElementById('calcFrom').value,
+    Require10DaysOff: document.getElementById('minDaysOff10').checked,
+    Require5DaysOff: document.getElementById('minDaysOff5').checked,
+    Require10PaidLeaves: document.getElementById('minPaid10').checked,
+    Require5PaidLeaves: document.getElementById('minPaid5').checked,
+    Maximum10DaysOff: document.getElementById('maxDaysOff10').checked,
+    Maximum5DaysOff: document.getElementById('maxDaysOff5').checked,
+    Maximum10PaidLeaves: document.getElementById('maxPaid10').checked,
+    Maximum5PaidLeaves: document.getElementById('maxPaid5').checked,
+    HolidayNames: state.holidayNames
+  };
+
+  const json = JSON.stringify(plan, null, 2);
+  const blob = new Blob([json], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `HolidayPlan_${state.year}_${state.countryCode}.hplan`;
+  a.click();
+  URL.revokeObjectURL(url);
+  setStatus('ok', 'Plan saved!');
+}
+
+function loadPlan(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+  reader.onload = ev => {
+    try {
+      const plan = JSON.parse(ev.target.result);
+
+      state.year = plan.Year;
+      state.countryCode = plan.CountryCode;
+      state.nationalHolidays = new Set(plan.NationalHolidays || []);
+      state.customHolidays = new Set(plan.CustomHolidays || []);
+      state.plannedLeaves = new Set(plan.PlannedLeaves || []);
+      state.weekendOverrides = new Set(plan.WeekendOverrides || []);
+      state.holidayNames = plan.HolidayNames || {};
+
+      document.getElementById('yearSelect').value = plan.Year;
+      const countryName = Object.entries(COUNTRIES).find(([,v]) => v === plan.CountryCode);
+      document.getElementById('countrySelect').value = plan.CountryCode;
+      document.getElementById('paidLeaves').value = plan.PaidLeavesAmount || '22';
+      if (plan.CalculateFrom) document.getElementById('calcFrom').value = plan.CalculateFrom;
+
+      document.getElementById('minDaysOff10').checked = !!plan.Require10DaysOff;
+      document.getElementById('minDaysOff5').checked = !!plan.Require5DaysOff;
+      document.getElementById('minPaid10').checked = !!plan.Require10PaidLeaves;
+      document.getElementById('minPaid5').checked = !!plan.Require5PaidLeaves;
+      document.getElementById('maxDaysOff10').checked = !!plan.Maximum10DaysOff;
+      document.getElementById('maxDaysOff5').checked = !!plan.Maximum5DaysOff;
+      document.getElementById('maxPaid10').checked = !!plan.Maximum10PaidLeaves;
+      document.getElementById('maxPaid5').checked = !!plan.Maximum5PaidLeaves;
+
+      renderCalendar();
+      updateStats();
+      setStatus('ok', 'Plan loaded successfully!');
+    } catch (err) {
+      alert('Error loading plan: ' + err.message);
+    }
+  };
+  reader.readAsText(file);
+  e.target.value = '';
+}
+
+// ─────────────────────────────────────────────
+// CLEAR
+// ─────────────────────────────────────────────
+
+function clearAll() {
+  state.plannedLeaves.clear();
+  state.customHolidays.clear();
+  state.weekendOverrides.clear();
+  renderCalendar();
+  updateStats();
+  setStatus('ok', 'Cleared planned leaves, custom holidays & weekend overrides');
+}
+
+// ─────────────────────────────────────────────
+// MODAL
+// ─────────────────────────────────────────────
+
+function openHowTo() { document.getElementById('howToModal').classList.add('open'); }
+function closeHowTo() { document.getElementById('howToModal').classList.remove('open'); }
+document.getElementById('howToModal').addEventListener('click', e => {
+  if (e.target === e.currentTarget) closeHowTo();
+});
+
+// ─────────────────────────────────────────────
+// START
+// ─────────────────────────────────────────────
+
+init();</script></body></html>
